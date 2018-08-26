@@ -1,0 +1,251 @@
+\documentclass[a4paper]{cvtemplate}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+
+\setmainfont{Roboto}[
+Path = /home/hemantku/.fonts/Roboto/,
+Extension = .ttf,
+UprightFont = *-Light,
+BoldFont = *-Regular,
+ItalicFont = *-LightItalic
+]
+
+\setmainfont{SourceSansPro}[
+Path = /home/hemantku/.fonts/SourceSansPro/,
+Extension = .ttf,
+UprightFont = *-Light,
+BoldFont = *-Regular,
+ItalicFont = *-LightItalic
+]
+
+\setmainfont{SourceSansPro}[
+Path = /home/hemantku/.fonts/SourceSansPro/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-SemiBold,
+ItalicFont = *-Italic
+]
+
+%\usepackage[default]{lato/tex/latex/lato/lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Uncomment this to switch from colour to greyscale
+
+\def\greyscale{1}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{CCCCCC}
+\definecolor{White}{HTML}{FFFFFF}
+\definecolor{Black}{HTML}{000000}
+
+\ifx\greyscale\undefined
+	\colorlet{accent}{VividPurple}
+	\colorlet{emphasis}{Black}
+	\colorlet{body}{SlateGrey}
+	\colorlet{headingbgcolor}{VividPurple}
+	\colorlet{headingfgcolor}{White}
+\else
+	\colorlet{accent}{SlateGrey}
+	\colorlet{emphasis}{SlateGrey}
+	\colorlet{body}{SlateGrey}
+	\colorlet{headingbgcolor}{LightGrey}
+	\colorlet{headingfgcolor}{SlateGrey}
+\fi
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\newcommand{\itemmarker}{{\small\textendash}}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\name{\textbf{HEMANT} {\fontspec{SourceSansPro-Light}[Path=/home/hemantku/.fonts/SourceSansPro/] KUMAR}}
+\email{hemantku@iitk.ac.in}
+\phonenumber{+91 854 792 9682}
+\department{Department of Computer Science and Engineering}
+\mailaddress{Kanpur-208016, India}
+\institute{Indian Institute of Technology, Kanpur}
+\homepage{cse.iitk.ac.in/users/hemantku}
+
+\makecvheaderR
+
+\cvsection{Interests}
+
+Information Theory, Data Compression, Complexity Theory, Linux Kernel Drivers
+%\smallskip
+
+\cvsection{Educational Qualifications}
+{
+	\vspace{-0.4em}
+	\renewcommand{\arraystretch}{1.5}%
+	\begin{tabularx}{\textwidth}{ l l l l }
+    \textbf{2019 \footnotesize{(tentative)}} & \vtop{\hbox{\textbf{Master of Technology}}\smallskip\hbox{\textbf{Computer Science and Engineering}}} & \textbf{Indian Institute of Technology, Kanpur} & \textbf{8.66/10}\\
+     %
+	2015 & \vtop{\hbox{Bachelor of Technology}\smallskip\hbox{Computer Science and Engineering}} & National Institute of Technology Calicut & 8.52/10\\
+	 %
+	2011 & {AISSCE}, CBSE & BSP Senior Secondary School Sector-10, Bhilai & 91.40\%\\
+	 %
+	2009 & {AISSE}, CBSE & BSP Senior Secondary School Sector-4, Bhilai & 90.20\%
+	\end{tabularx}
+	\vspace{\baselineskip}
+}
+
+\cvsection{Industrial Experience}
+
+\cvproject{Engineer I}{Cavium Networks (Ind) Pvt. Ltd., Hyderabad}{July 2015 - June 2016}{
+	\begin{itemize}
+		\item implemented and refactored Linux kernel drivers for hardware accelerators on OCTEON and ThunderX for
+		
+		embedded systems and high performance server platforms
+		
+		\item Pushed the kernel driver source for ZIP compression engine on ThunderX to the  Linux kernel tree
+		
+		(drivers/crypto/cavium/zip)
+	\end{itemize}
+}
+
+\cvsection{Internship}
+
+\cvproject{Secure Web Authentication with Zero-Knowledge Cryptographic Protocols}{AppsPicket}{\textbf{Feb 2018}}{
+	\begin{itemize}
+		\item Implemented AppsPicket’s patented cryptographic authentication protocols for web and mobile platforms
+		\item Involved understanding of advanced cryptographic concepts like zero-knowledge proofs
+		\item Implemented the protocols using secure crypto JavaScript and PHP libraries
+	\end{itemize}	
+}
+
+%\cvsection{Educational Qualifications}
+%{
+%	\vspace{-0.4em}
+%	\renewcommand{\arraystretch}{1.5}%
+%	\begin{tabularx}{\textwidth}{ l l l l }
+%    \textbf{2019 \footnotesize{(tentative)}} & \vtop{\hbox{\textbf{Master of Technology}}\smallskip\hbox{\textbf{Computer Science and Engineering}}} & \textbf{Indian Institute of Technology, Kanpur} & \textbf{8.66/10}\\
+%     %
+%	2015 & \vtop{\hbox{Bachelor of Technology}\smallskip\hbox{Computer Science and Engineering}} & National Institute of Technology Calicut & 8.52/10\\
+%	 %
+%	2011 & {AISSCE}, CBSE & BSP Senior Secondary School Sector-10, Bhilai & 91.40\%\\
+%	 %
+%	2009 & {AISSE}, CBSE & BSP Senior Secondary School Sector-4, Bhilai & 90.40\%
+%	\end{tabularx}
+%	\vspace{\baselineskip}
+%}
+
+\cvsection{Key Academic Projects}
+
+\cvproject{Construction of Base-3 Normal Number \footnote{an irrational number represented in base-$b$ having uniform probability for any finite base-$b$ string} in \boldmath$\mathsf{AC^0}$\unboldmath, MTech thesis}{under Dr. Satyadev Nandakumar}{\textbf{Jan 2018}}{
+	\begin{itemize}
+		\item Studied the possibility of having non-uniform $\mathsf{AC^0}$ circuit for querying the approximate \textit{base-2} number
+		\item Pursuing ideas on assignmnet of \textit{base-2} variables to get nice probability balanced \textit{base-3} number
+	\end{itemize}
+}
+
+\cvproject{Cryptanalysis of Weak KECCAK\footnote{the SHA3 hashing algorithm}}{under Dr. Shashank Singh}{Mar 2018 - Apr 2018}{
+	\begin{itemize}
+		\item Exploited the smaller capacity of Weak KECCAK construction to reduce the complexity of brute force attack
+		\item Used birthday attack for further reducing the complexity of finding collision, preimage and second preimage attack
+	\end{itemize}	
+}
+
+\cvproject{Differential Cryptanalysis of 6-round DES}{under Dr. Shashank Singh}{Feb 2018 - Mar 2018}{
+	\begin{itemize}
+		\item Applied Dinur-Shamir's idea of creating two differential trail for 4-rounds DES and gathering 42-key bits
+		\item Applied clique construction method to efficiently count the the more probable subkeys
+	\end{itemize}	
+}
+
+\cvproject{Data Provenance In X\footnote{the X window system used widely in many Linux distributions}}{under Dr. Anu Mary Chacko}{July 2014 - May 2015}{
+	\begin{itemize}
+		\item Created a provenance system for X by tracking cut, copy and paste happening in X
+		\item Represented the data from provenance system as a graph and providing a querying system
+		\item Used X Toolkit (Xt) library for developing the application
+	\end{itemize}
+}
+
+\iffalse
+\cvproject{Simple Integer Language Compiler, SILC}{under Prof. (Dr.) Vineeth Paleri}{Dec 2013 - May 2014}{
+	\begin{itemize}
+		\item Made a compiler for SIL and generated assembly code for Simple Integer Machine (SIM)
+		\item Created and implemented abstract syntax tree and function calls with static scope rule
+		\item Used lex and yacc to develop lexer and parser respectively
+	\end{itemize}
+}
+
+\cvproject{eXperimental Operating System, XOS}{under Dr. K Muralikrishnan}{July 2013 - Nov 2013}{
+	\begin{itemize}
+		\item Created an operating system for eXperimental String Machine (XSM)
+		\item Created a kernel with non pre-emptive Round Robin process scheduler and a shell
+		\item Applied memory management and implemented system calls for interaction with XOS kernel
+	\end{itemize}
+}
+
+\cvproject{Launch Vehicles}{5\textsuperscript{th} National Aerospace Olympiad, PEC University, Chandigarh}{Dec 2010}
+{
+	\begin{itemize}
+		\item Studied and performed a comparative analysis of recent technologies being used in development of satellite launch vehicles including fuel, design, engine, material, dynamics and cryogenics
+    	\item Received the \textbf{best project} award in the paper presentation
+	\end{itemize}
+}
+\fi
+
+\cvsection{Positions of Responsibility}
+
+\cvproject{Teaching Assistant}{CS350 Principal of Programming Languages, Dr. Satyadev Nandakumar}{\textbf{Aug 2018}}{\smallskip}
+
+\cvproject{Teaching Assistant}{ESC101 Introduction to Computing, Dr. Nisheeth Srivastava}{Aug 2017 - May 2018}{\smallskip}
+
+\cvproject{Student Lab Administrator}{Software Systems Laboratory, NIT Calicut}{July 2013 - May 2015}{
+	\begin{itemize}
+		\item Responsible for administration of servers and workstation
+		\item Configured LDAP based authentication, NFS for data backup and wrote scripts for automation and backup
+		%\item Migrated Athena server to new machine and developed a new website for it
+		%\item Set up intra-campus local Ubuntu Mirror
+	\end{itemize}
+}
+
+\iffalse
+\cvproject{Website Maintainer}{Department of Computer Science and Engineering}{July 2013 - Dec 2014}{
+	\begin{itemize}
+		\item Responsible for security and content integrity in website
+	\end{itemize}
+}
+\fi
+
+\cvsection{Technical Skills}
+
+%\begin{tabular}{ l l }
+%Programming Languages & {\color{body}C, C++}\\
+%Scripting Languages & {\color{body}BASH, Python}\\
+%DBMS & {\color{body}MySQL, Oracle}\\
+%Web Technology & {\color{body}HTML, CSS, JavaScript}\\
+%Animation and Graphics & {\color{body}Blender, Inkscape}\\
+%Typesetting	& {\color{body}\LaTeX}
+%\end{tabular}
+
+
+\begin{tabular}{ l l l l l }
+	Programming Languages & {\color{body}C, C++} & \phantom{hemant} & Web Technology & {\color{body}HTML, CSS, JavaScript}\\
+	
+	Scripting Languages & {\color{body}BASH, Python} & & Animation and Graphics & {\color{body}Blender, Inkscape}\\
+	DBMS & {\color{body}MySQL, Oracle} & & Typesetting	& {\color{body}\LaTeX}
+\end{tabular}
+
+\cvsection{Extra Curricular Activities and Achievements}
+{\color{body}
+\begin{itemize}
+	\item Wrote a \textbf{compiler} for Simple Integer Language under Dr. V. Paleri \hfill {\footnotesize {https://github.com/hemantkumar31121993/wtf}}
+	\item 1\textsuperscript{st} Dan \textbf{Black Belt} in \textbf{Okinawan Shorin-ryu Karate}
+	\item Green-I belt  in \textbf{Kukkiwan Taekwondo} \phantom{g}
+\end{itemize}
+}
+
+\cvsection{Hobbies}
+\begin{itemize}
+	\item Computer Animation, Origami, \textbf{Martial Arts}, Badminton
+\end{itemize}
+\bigskip
+\end{document}
